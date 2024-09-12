@@ -1,0 +1,55 @@
+@import "../../mixins";
+
+.accordionItem {
+  box-shadow: 0 2px 4px var(--font-secondary-color);
+  border-radius: var(--border-radius);
+  background: var(--bg-color);
+  margin: 1em 0;
+}
+
+.accordionTitle {
+  width: 100%;
+  padding: 10px;
+  background: var(--bg-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include text-style(var(--font-primary), 25px, 1.3em, 500, var(--font-color));
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background: var(--bg-color);
+  padding: 0 10px;
+  border-radius: var(--border-radius);
+}
+
+.accordionContent > * {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.accordionItem .accordionContent[style*="height: 0"] > * {
+  opacity: 0;
+}
+
+.accordionItem .accordionContent:not([style*="height: 0"]) > * {
+  opacity: 1;
+  transition-delay: 0.3s;
+}

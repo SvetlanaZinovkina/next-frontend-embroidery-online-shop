@@ -1,0 +1,44 @@
+@import "../mixins";
+
+.container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 60px;
+  max-width: 1300px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  @include text-style(var(--font-primary), 13px, 3em);
+  text-align: center;
+}
+
+.title {
+  @include text-style(var(--font-primary), 25px, 1.3em);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.highlight {
+  background: var(--highlight-bg);
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.textPolicy {
+  @include text-style(var(--font-primary), 13px, 3em);
+  text-align: justify;
+}
+
+.textPolicyTitle {
+  @include text-style(var(--font-primary), 15spx, 3em, 700);
+  text-align: start;
+  padding-left: 15px;
+}

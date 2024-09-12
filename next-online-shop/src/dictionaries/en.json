@@ -1,0 +1,95 @@
+{
+  "loginForm": {
+    "signIn": "Sign In",
+    "userName": "Your Username",
+    "userPassword": "Password",
+    "btn": "Sign In",
+    "footer": {
+      "signUp": "Sign Up",
+      "textNoAccount": "Don't have an account?"
+    }
+  },
+  "signUpForm": {
+    "signUp": "Sign Up",
+    "userName": "Your Username",
+    "userPassword": "Password",
+    "btn": "Sign Up",
+    "footer": {
+      "signIn": "Sign In",
+      "textHaveAccount": "Already have an account?"
+    }
+  },
+  "notFound": {
+    "notPage": "Page Not Found",
+    "mainLink": "Return to Home Page"
+  },
+  "navBar": {
+    "main": "Home",
+    "embroidery": "Embroidery",
+    "svg": "SVG",
+    "discount": "Discounts",
+    "contactMe": "Contact Us",
+    "telegramShop": "Our Telegram",
+    "nameShop": "Embroidery by Lana"
+  },
+  "mainPage": {
+    "catalog": "Shop now",
+    "welcome": "Machine Embroidery and SVG Shop! ❤️",
+    "describe": "Here you will find free embroideries and a variety of logo embroideries",
+    "popularEmbroidery": "Popular Embroidery",
+    "newEmbroidery": "New Arrival",
+    "rules0": "Here you will find exclusive, modern, and high-quality digital machine embroidery.",
+    "rules1": "If you like an embroidery design but can't find the size you need, contact me and I will create the size you want at no extra cost!",
+    "rules2": "✅ You can order custom embroidery for business or personal use!",
+    "rules3": "Production time is 1 to 5 working days, depending on complexity and workload.",
+    "rules4": "The price also depends on complexity, with a minimum of 1000 rubles.",
+    "rules5": "YOU MAY NOT RESELL DIGITAL PRODUCTS",
+    "rules6": "BUT you can use my designs for your physical products for sale.",
+    "rules7": "After payment, you will receive an email with a ZIP file attachment. The design will also always be available in your personal account.",
+    "rules8": "Payment by bank card."
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "phoneNumber": "+ 7 967 000 68 68",
+    "email": "embroiderybylana@gmail.com",
+    "address": "Moscow, Russia",
+    "policy": "Privacy Policy and Terms of Service",
+    "navBar": {
+      "main": "Home",
+      "embroidery": "Embroidery",
+      "svg": "SVG",
+      "discount": "Discounts",
+      "contactMe": "Contact Us",
+      "telegramShop": "Telegram Bot"
+    }
+  },
+  "policy": {
+    "title": "Terms of Service",
+    "sitePolicy": "Site Policy",
+    "confidentialPolicy": "Privacy Policy",
+    "changePolicy": "I do not accept returns, exchanges, or cancellations.",
+    "beforeBuy": "Please make sure that the sizes and formats are correct before purchasing.",
+    "afterBuy": "After payment, you will receive an email with a zip file that needs to be unzipped. Inside this folder are the designs. The purchase is also available in your personal account under 'My Orders'.",
+    "contactMe": "Please contact me if you have any problems with your order.\n",
+    "chatMe": "You can write to me via email or through the chat at the bottom right of the website.",
+    "policy1": "The administration of embroiderybylana.com is obliged to preserve your privacy on the Internet. We pay great attention to the protection of the data you provide us. Our privacy policy is based on the General Data Protection Regulation (GDPR) of the European Union. The purposes for which we collect your personal data: improving our service, communication with visitors to this site, newsletters, processing user data for online sales, providing requested information, providing services related to the website, and other actions listed below.",
+    "policyTitle1": "Storage and Processing of Personal Data",
+    "policy2": "We collect and process your personal data only with your consent. With your permission, we may collect and process the following data: name, email address, phone number. The collection and processing of your personal information are carried out in accordance with the laws of the European Union and Russia.",
+    "policyTitle2": "Storage, Modification, and Deletion of Data",
+    "policy3": "The user who provided their personal data to embroiderybylana.com has the right to modify or delete it, as well as to withdraw consent to the processing of data. Your personal data will be stored for 12 months. After the completion of the processing of your personal data, the website administration will permanently delete it. To access your personal data, you can contact the administration at embroiderybylana@gmail.com. We may share your data with third parties only with your consent. If the data was transferred to a third party that is not associated with our organization, we cannot make any changes to this data.",
+    "policyTitle3": "Processing of Technical Data",
+    "policy4": "Records of your IP address, visit time, browser settings, operating system, and other technical information are stored in the database when visiting the site embroiderybylana.com. This data is necessary for the correct display of the website content. It is impossible to identify the visitor's identity based on this data.",
+    "policyTitle4": "Children's Personal Information",
+    "policy5": "If you are a parent or legal guardian of a minor child and know that the child has provided us with personal information without your consent, please contact us at embroiderybylana@gmail.com. It is prohibited to enter personal data of minor users without parental or legal guardian consent.",
+    "policyTitle5": "Processing of Cookies",
+    "policy6": "We use cookies to correctly display website content and to make browsing embroiderybylana.com easier. These are small files that are stored on your device. They help the website remember information about you, such as the language you use on the website and which pages you have already visited. This information will be useful on your next visit. Thanks to cookies, browsing the website becomes much more convenient. You can learn more about these files here. You can configure the acceptance and blocking of cookies in your browser settings. The inability to receive cookies may limit the website's functionality.",
+    "policyTitle6": "Processing of Personal Data by Other Services",
+    "policy7": "This website uses third-party online services that collect data independently from us. Such services include: Google Analytics. The data collected by these services may be transferred to other services of these organizations. They may use the data to personalize advertising in their own advertising network. You can learn about the user agreements of these organizations on their websites. You can also opt-out of the collection of your personal data. For example, here you can find a browser add-on to disable Google Analytics. We do not transfer any personal data to other organizations or services not mentioned in this privacy policy. In exceptional cases, collected data may be provided upon a legitimate request from governmental authorities authorized to request such information.",
+    "policyTitle7": "Links to Other Sites",
+    "policy8": "Our website embroiderybylana.com may contain links to other websites that we do not control. We are not responsible for the content of these websites. We recommend you familiarize yourself with the privacy policy of each website you visit, if such a policy exists.",
+    "policyTitle8": "Changes to the Privacy Policy",
+    "policy9": "From time to time, our website embroiderybylana.com may update our privacy policy. We will notify you of any changes to the privacy policy posted on this page. We monitor any changes in the legislation related to personal data in the European Union and Russia. If you have entered any of your personal data on our website, we will inform you about changes to our privacy policy. If your personal data, specifically your contact information, was entered incorrectly, we will not be able to contact you.",
+    "policyTitle9": "Withdrawal and Final Provisions",
+    "policy10": "You can contact the administration of embroiderybylana.com on any issues related to the privacy policy at: embroiderybylana@gmail.com or by filling out the contact form listed in the appropriate section of this site. If you do not agree with this privacy policy, you may not use the services of embroiderybylana.com. In this case, you should refrain from visiting our website."
+  }
+}

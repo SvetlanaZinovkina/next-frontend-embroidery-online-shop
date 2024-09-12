@@ -1,0 +1,21 @@
+@mixin text-style(
+  $font-family,
+  $font-size,
+  $line-height: 1.5em,
+  $font-weight: 400,
+  $color: rgb(0, 0, 0)
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin responsive-text($min-size, $max-size) {
+  font-size: $min-size;
+
+  @media (min-width: 768px) {
+    font-size: $max-size;
+  }
+}

@@ -1,0 +1,75 @@
+@import "../mixins";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  max-height: 440px;
+  min-height: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  border-radius: var(--border-radius-btn);
+  box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.cardImage {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.cardBody {
+  padding: 16px;
+  text-align: center;
+}
+
+.cardTitle {
+  @include text-style(var(--font-secondary), 1.2rem, 1.5em);
+  margin-bottom: 8px;
+}
+
+.cardText {
+  @include text-style(var(--font-secondary), 1.5rem, 1.5em);
+  margin-bottom: 16px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.primaryButton {
+  background-color: var(--text-primary);
+  @include text-style(var(--font-secondary), 1rem, 1.5em);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius-btn);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--btn-hover-purple);
+    border: 1px;
+  }
+}
+
+.secondaryButton {
+  background-color: var(--btn-secondary);
+  @include text-style(var(--font-secondary), 1rem, 1.5em);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius-btn);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--btn-hover-purple);
+  }
+}

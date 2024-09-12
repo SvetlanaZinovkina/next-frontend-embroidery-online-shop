@@ -1,0 +1,96 @@
+@import "../mixins";
+
+.hero-section {
+  padding: 50px 30px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  @media (max-width: 767.98px) {
+    min-height: 30vh;
+  }
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      justify-content: center;
+    }
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left-column {
+    justify-content: center;
+    max-width: 500px;
+    @media (max-width: 767.98px) {
+      justify-content: space-between;
+    }
+    span {
+      @include text-style(
+        var(--font-primary),
+        1em,
+        1.7em,
+        400,
+        var(--font-secondary-color)
+      );
+    }
+  }
+
+  .right-column {
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+    img {
+      border-radius: 20px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  h1 {
+    @include text-style(var(--font-primary), 2em, 1.7em);
+    margin-bottom: 1rem;
+    @media (max-width: 767.98px) {
+      text-align: center;
+    }
+  }
+
+  .button {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius-btn);
+    @include text-style(
+      var(--font-primary),
+      1.2em,
+      1.5em,
+      700,
+      var(--bg-color)
+    );
+    font-family: var(--font-primary);
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 200px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      margin: 1em auto;
+    }
+    &:hover {
+      background-color: var(--btn-hover-purple);
+    }
+  }
+}

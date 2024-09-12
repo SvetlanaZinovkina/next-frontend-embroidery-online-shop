@@ -1,0 +1,43 @@
+@import "../mixins";
+
+.popularItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.container {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  @media (max-width: 767.98px) {
+    margin: 0 1em;
+  }
+}
+
+.title {
+  @include text-style(var(--font-primary), 2rem, 1.7em, 400);
+  margin-bottom: 1.5em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.loading {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #007bff;
+}
+
+.error {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #dc3545;
+}

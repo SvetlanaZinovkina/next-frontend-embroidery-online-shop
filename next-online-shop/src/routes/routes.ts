@@ -1,0 +1,30 @@
+const routes = {
+  defaultApiPath: (host: string): string => `${host}/api/v1`,
+  notFoundPage: (): string => "*",
+  mainPage: (): string => "/",
+  login: (): string => "/login",
+  signUp: (): string => "/signup",
+  cart: (): string => "/cart",
+  purchases: (): string => "/purchases",
+  shopPage: (): string => "ru/shop/embroidery",
+  getEmbroideriesList: (): string => "/shop/embroidery",
+  getPopularEmbroidery: (): string => "/shop/popular-embroidery",
+  getEmbroidery: (id: string | number): string => `/shop/embroidery/${id}`,
+  updateUsername: (): string => "/user/username",
+  getEmbroideriesByCategory: (categoryId: string | number): string =>
+    `/shop/category/${categoryId}`,
+  uploadEmbroidery: (): string => "/shop/embroidery",
+  uploadEmbroideryAdmin: (): string => "/admin/embroidery",
+  getCategories: (): string => "/shop/category",
+  uploadCategory: (): string => "/shop/category",
+  updateEmail: (): string => "/user/email",
+  updatePassword: (): string => "/user/password",
+  catalogSvgPath: (): string => "/catalog/svg",
+  getUserData: (): string => "/user",
+  editUserData: (userId: string | number): string => `/user/${userId}/edit`,
+  editEmbroidery: (id: string | number): string => `/edit/${id}`,
+  discount: (): string => "/discount",
+  policy: (locale: string): string => `${locale}/policy`,
+};
+
+export default routes;
