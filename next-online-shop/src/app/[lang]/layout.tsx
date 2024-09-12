@@ -1,7 +1,8 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { ReactNode } from "react";
-import {getDictionary} from "./dictionaries";
+import { getDictionary } from "./dictionaries";
+import { Dict } from "../../types/dictionary-types";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -10,14 +11,15 @@ interface RootLayoutProps {
   };
 }
 export default async function LocaleLayout({
-  children, params: { lang },
+  children,
+  params: { lang },
 }: RootLayoutProps) {
-  const dict = await getDictionary(lang);
+  const dict: Dict = await getDictionary(lang);
   return (
     <>
-      <Header dict={dict}/>
+      <Header dict={dict} />
       <main>{children}</main>
-      <Footer  dict={dict}/>
+      <Footer dict={dict} />
     </>
   );
 }

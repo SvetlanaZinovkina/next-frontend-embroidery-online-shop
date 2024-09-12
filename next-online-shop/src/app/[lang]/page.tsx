@@ -4,13 +4,14 @@ import { EmbroideryItem } from "../../types/types";
 import axiosClassic from "../../api/axios";
 import routes from "../../routes/routes";
 import { getDictionary } from "./dictionaries";
+import { Dict } from "../../types/dictionary-types";
 
 export default async function HomePage({
   params: { lang },
 }: {
   params: { lang: string };
 }) {
-  const dict = await getDictionary(lang);
+  const dict: Dict = await getDictionary(lang);
   try {
     const { data } = await axiosClassic.get(routes.getPopularEmbroidery(), {
       params: {
@@ -22,7 +23,7 @@ export default async function HomePage({
     return (
       <>
         <HeroSection dict={dict} />
-        <PopularEmbroidery embroideryItems={embroideryItems} dict={dict}/>
+        <PopularEmbroidery embroideryItems={embroideryItems} dict={dict} />
       </>
     );
   } catch (err) {

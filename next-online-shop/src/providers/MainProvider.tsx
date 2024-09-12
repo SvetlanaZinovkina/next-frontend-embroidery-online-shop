@@ -23,9 +23,7 @@ const MainProvider: FC<MainProviderProps> = ({ children }) => {
 
   return (
     <Provider store={store}>
-      <QueryClientProvider client={queryClient}>
-        {children}
-      </QueryClientProvider>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </Provider>
   );
 };

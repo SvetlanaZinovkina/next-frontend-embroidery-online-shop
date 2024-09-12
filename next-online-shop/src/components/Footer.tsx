@@ -6,8 +6,9 @@ import styles from "../styles/components/Footer.module.scss";
 import routes from "../routes/routes";
 import { useSelector } from "react-redux";
 import { AppState } from "../types/store-types";
+import { DictProps } from "../types/types";
 
-const Footer: React.FC = ({dict}) => {
+const Footer: React.FC<DictProps> = ({ dict }) => {
   const locale = useSelector((state: AppState) => state.lang.lang);
 
   return (

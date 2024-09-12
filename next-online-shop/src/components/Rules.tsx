@@ -1,8 +1,9 @@
 import styles from "../styles/components/Rules.module.scss";
 import React from "react";
 import AccordionItem from "./ui/AccordionItem";
+import { DictProps } from "../types/types";
 
-const Rules: React.FC = ({dict}) => {
+const Rules: React.FC<DictProps> = ({ dict }) => {
   return (
     <>
       <section className={styles.container}>

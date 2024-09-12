@@ -4,8 +4,9 @@ import routes from "../routes/routes";
 import styles from "../styles/components/HeroSection.module.scss";
 import gifBearEmbroidery from "../assets/images/background2.jpg";
 import Image from "next/image";
+import { DictProps } from "../types/types";
 
-const HeroSection: React.FC = ({ dict }: { dict: any }) => {
+const HeroSection: React.FC<DictProps> = ({ dict }) => {
   return (
     <section className={styles["hero-section"]}>
       <div className={styles.container}>

@@ -1,3 +1,5 @@
+import { Dict } from "./dictionary-types";
+
 export interface EmbroideryItem {
   id: number;
   image: string;
@@ -16,4 +18,9 @@ export interface PopularItemProps {
 
 export interface PopularEmbroideryProps {
   embroideryItems: EmbroideryItem[];
+  dict: Dict;
+}
+
+export interface DictProps {
+  dict: Dict;
 }

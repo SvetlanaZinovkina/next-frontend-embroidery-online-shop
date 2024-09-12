@@ -5,8 +5,9 @@ import routes from "../routes/routes";
 import { UserIcon, SearchIcon, CartIcon } from "./ui/Icons";
 import styles from "../styles/components/Header.module.scss";
 import LocaleSwitcher from "./ui/LocaleSwitcher";
+import { DictProps } from "../types/types";
 
-const Header: React.FC = ({dict}) => {
+const Header: React.FC<DictProps> = ({ dict }) => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
   const handleMenuToggle = () => {
