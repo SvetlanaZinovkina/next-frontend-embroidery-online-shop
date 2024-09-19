@@ -1,0 +1,31 @@
+@import "../../mixins";
+
+.categories {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--border-radius-btn);
+  border: 1px solid var(--border-color);
+  padding: var(--padding-btn);
+  @include text-style(
+    var(--font-primary),
+    0.9em,
+    1.7em,
+    400,
+    var(--font-secondary-color)
+  );
+  span{
+    padding: 0.1em 0.5em;
+    &:hover {
+      border-radius: var(--border-radius-btn);
+      background-color: var(--text-primary);
+      border: 1px;
+      color: white;
+    }
+  }
+}

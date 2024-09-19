@@ -19,8 +19,20 @@ export interface PopularItemProps {
 export interface PopularEmbroideryProps {
   embroideryItems: EmbroideryItem[];
   dict: Dict;
+  lang: string;
 }
 
 export interface DictProps {
   dict: Dict;
+}
+
+export interface Category {
+  id: number;
+  name: string;
+}
+
+export interface CategoriesProps {
+  categories: Category[];
+  dict: Dict;
+  lang: string;
 }

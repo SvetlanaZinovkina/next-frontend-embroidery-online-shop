@@ -1,16 +1,17 @@
 import React from "react";
-import styles from "../../styles/components/itemCard.module.scss";
+import styles from "../../styles/components/ui/itemCard.module.scss";
 import createPathToImg from "../../utilits/createPathToImg";
 import { EmbroideryItem } from "../../types/types";
 import Image from "next/image";
 
 interface ItemCardProps {
-  item: EmbroideryItem; // Используем тип для пропсов
+  item: EmbroideryItem;
+  lang: string;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
-  const { id, image, title, price } = item;
-  const currents = "$";
+const ItemCard: React.FC<ItemCardProps> = ({ item, lang }) => {
+  const { image, title, price } = item;
+  const currents = lang === "en" ? "$" : "₽";
 
   const handleBuyClick = (id: number) => {
     // Логика для кнопки "Купить"

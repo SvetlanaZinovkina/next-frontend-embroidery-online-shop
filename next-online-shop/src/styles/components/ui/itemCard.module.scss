@@ -1,4 +1,4 @@
-@import "../mixins";
+@import "../../mixins";
 
 .card {
   display: flex;
@@ -9,8 +9,8 @@
   min-height: 300px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  border-radius: var(--border-radius-btn);
-  box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
+  //border-radius: var(--border-radius-btn);
+  //box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
   &:hover {
     transform: translateY(-5px);
   }

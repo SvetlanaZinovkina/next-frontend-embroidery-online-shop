@@ -23,7 +23,11 @@ export default async function HomePage({
     return (
       <>
         <HeroSection dict={dict} />
-        <PopularEmbroidery embroideryItems={embroideryItems} dict={dict} />
+        <PopularEmbroidery
+          embroideryItems={embroideryItems}
+          dict={dict}
+          lang={lang}
+        />
       </>
     );
   } catch (err) {
