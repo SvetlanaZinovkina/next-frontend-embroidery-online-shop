@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap");
 :root {
-  --highlight-bg: pink;
-  --highlight-color: black;
+  --btn-hover-pink: pink;
+  --black: black;
   --navbar-bg: rgb(244, 9, 115);
   --primary-color: rgb(167, 100, 249);
   --secondary-color: rgb(244, 9, 115);
@@ -19,7 +19,7 @@
   --btn-hover: #f7f7f7;
   --btn-hover-purple: rgb(167, 100, 249);
   --text-primary: rgb(244, 9, 115);
-  --footer-bg: #f7f7f7;
+  --white: #f7f7f7;
   --padding-btn: 1em;
   --font-primary: "Comfortaa", sans-serif;
   --font-secondary: "Montserrat", sans-serif;

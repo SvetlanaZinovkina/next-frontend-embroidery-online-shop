@@ -1,0 +1,7 @@
+.container{
+  display: flex;
+  padding: 7em 30px;
+  @media (max-width: 767.98px) {
+    padding: 2em 30px;
+  }
+}

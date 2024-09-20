@@ -93,6 +93,10 @@ interface Policy {
   policy10: string;
 }
 
+interface Catalog {
+  clearCategory: string;
+  category: string;
+}
 export interface Dict {
   loginForm: LoginFormDict;
   signUpForm: SignUpFormDict;
@@ -101,4 +105,5 @@ export interface Dict {
   mainPage: MainPageDict;
   footer: FooterMainDict;
   policy: Policy;
+  catalog: Catalog;
 }

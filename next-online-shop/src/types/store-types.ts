@@ -1,4 +1,4 @@
-import { EmbroideryItem, PopularItemProps } from "./types";
+import { EmbroideryItem, PopularItemProps, Category } from "./types";
 
 export interface User {
   id: string | null;
@@ -24,10 +24,15 @@ export interface LanguageState {
   lang: string;
 }
 
+export interface CategoriesState {
+  categories: Category[];
+  activeCategory: number | null;
+}
+
 export interface AppState {
   user: User;
   isAuthenticated: boolean;
-  categories: string[];
+  categories: CategoriesState;
   products: EmbroideryItem[];
   popularProducts: EmbroideryItem[];
   loading: boolean;

@@ -24,7 +24,7 @@ const routes = {
   editUserData: (userId: string | number): string => `/user/${userId}/edit`,
   editEmbroidery: (id: string | number): string => `/edit/${id}`,
   discount: (): string => "/discount",
-  policy: (locale: string): string => `${locale}/policy`,
+  policy: () => '/policy',
 };
 
 export default routes;

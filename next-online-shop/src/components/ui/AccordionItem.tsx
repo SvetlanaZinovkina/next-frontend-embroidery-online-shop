@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "../../styles/components/ui/Accordion.module.scss";
+import cn from 'classnames';
 
 interface AccordionItemProps {
   title: string;
@@ -24,7 +25,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     <div className={styles.accordionItem}>
       <button className={styles.accordionTitle} onClick={toggleOpen}>
         {title}
-        <span className={`${styles.arrow} ${isOpen ? styles.open : ""}`}>
+        <span className={cn(styles.arrow, { [styles.open]: isOpen })}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="30px"

@@ -27,12 +27,18 @@ export interface DictProps {
 }
 
 export interface Category {
-  id: number;
+  category_id: number;
   name: string;
 }
 
 export interface CategoriesProps {
   categories: Category[];
+  dict: Dict;
+  lang: string;
+}
+
+export interface EmbroideriesProps {
+  embroideries: EmbroideryItem[];
   dict: Dict;
   lang: string;
 }

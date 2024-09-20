@@ -21,7 +21,7 @@ const Footer: React.FC<DictProps> = ({ dict }) => {
               <p>{dict.footer.phoneNumber}</p>
               <p>{dict.footer.email}</p>
               <p>{dict.footer.address}</p>
-              <Link href={routes.policy(locale)} className={styles.link}>
+              <Link href={routes.policy()} className={styles.link}>
                 {dict.footer.policy}
               </Link>
             </div>
@@ -42,10 +42,10 @@ const Footer: React.FC<DictProps> = ({ dict }) => {
               <Link href={routes.discount()} className={styles.link}>
                 {dict.footer.navBar.discount}
               </Link>
-              <Link href={routes.policy(locale)} className={styles.link}>
+              <Link href={routes.policy()} className={styles.link}>
                 {dict.footer.navBar.contactMe}
               </Link>
-              <Link href={routes.policy(locale)} className={styles.link}>
+              <Link href={routes.policy()} className={styles.link}>
                 {dict.footer.navBar.telegramShop}
               </Link>
             </div>
