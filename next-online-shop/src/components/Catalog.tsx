@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/components/Catalog.module.scss";
 import { EmbroideriesProps } from "../types/types";
-import ItemCard from "./ui/ItemCard";
+import CatalogCard from "./ui/CatalogCard";
 
 const Catalog: React.FC<EmbroideriesProps> = ({ embroideries, dict, lang }) => {
   const { data } = embroideries;
@@ -12,7 +12,7 @@ const Catalog: React.FC<EmbroideriesProps> = ({ embroideries, dict, lang }) => {
           const image = item.images.length > 0 ? item.images[0].image_path : "";
 
           return (
-                <ItemCard item={{ ...item, image }} lang={lang} />
+                <CatalogCard item={{ ...item, image }} lang={lang} />
           );
         })}
       </div>

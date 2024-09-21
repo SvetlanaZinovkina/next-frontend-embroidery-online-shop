@@ -64,6 +64,7 @@
     min-width: 400px;
     justify-content: space-between;
     @media (max-width: 767.98px) {
+      display: none;
       justify-content: space-around;
     }
     .link {

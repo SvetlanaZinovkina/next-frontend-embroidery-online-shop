@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   background: var(--primary-color);
+  z-index: 100;
   .container {
     max-width: 1300px;
     padding: 5px 30px;
@@ -91,7 +92,6 @@
   right: 0;
   width: 250px;
   height: 100%;
-  background: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +99,9 @@
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1000;
-
+  background: rgba(167, 100, 249, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
   &.open {
     transform: translateX(0);
   }

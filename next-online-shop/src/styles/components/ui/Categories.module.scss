@@ -2,10 +2,11 @@
 
 .categories {
   display: flex;
-  align-items: center;
+  align-items: start;
   min-width: 180px;
-  @media (max-width: 767.98px) {
+  @media (max-width: 880px) {
     flex-direction: column;
+    align-items: end;
   }
 }
 
@@ -16,6 +17,9 @@
   border-radius: var(--border-radius-btn);
   border: 1px solid var(--border-color);
   padding: var(--padding-btn);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   transition: max-height 0.2s ease, padding 0.2s ease;
   @include text-style(
     var(--font-primary),
@@ -24,10 +28,10 @@
     400,
     var(--font-secondary-color)
   );
-  @media (max-width: 767.98px) {
-    position: absolute;
-    left: 30px;
-    top: 95px;
+  @media (max-width: 880px) {
+    position:  fixed;
+    right: 2%;
+    top: 11%;
     padding: 0;
     z-index: 4;
     background: rgba(255, 255, 255, 0.2);
@@ -87,7 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 767.98px) {
+  @media (max-width: 880px) {
     margin: 1em auto;
   }
   &:hover {
@@ -101,7 +105,7 @@
 .burger {
   display: none;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 880px) {
     display: flex;
     align-items: center;
     justify-content: center;

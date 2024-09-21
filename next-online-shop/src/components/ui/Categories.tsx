@@ -12,8 +12,10 @@ const Categories: React.FC<CategoriesProps> = ({ categories, dict, lang }) => {
   const dispatch = useDispatch();
   const activeCategory = useSelector((state: AppState) => state.categories.activeCategory);
   const [isOpen, setIsOpen] = useState(false);
+
   const handleChooseCategory = (categoryId: number | null) => {
     dispatch(setActiveCategory(categoryId));
+    setIsOpen(false);
   };
 
   return (

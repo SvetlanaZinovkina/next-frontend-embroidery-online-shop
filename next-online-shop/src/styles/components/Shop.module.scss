@@ -1,7 +1,12 @@
 .container{
+  min-width: 100vw;
+  //background-color: var(--bg-color-catalog);
   display: flex;
+  justify-content: start;
   padding: 7em 30px;
-  @media (max-width: 767.98px) {
-    padding: 2em 30px;
+  max-width: 1300px;
+  @media (max-width: 880px) {
+    padding: 3em 30px;
+    flex-direction: column;
   }
 }

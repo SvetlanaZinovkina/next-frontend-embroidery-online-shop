@@ -4,5 +4,9 @@
   max-width: 1000px;
   flex-wrap: wrap;
   gap: 2em;
+  padding: 0 2em;
+  @media (max-width: 880px) {
+    padding: 2em;
+  }
 }
 
