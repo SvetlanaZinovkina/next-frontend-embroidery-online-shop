@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import styles from "../../styles/components/ui/CatalogCard.module.scss";
 import createPathToImg from "../../utilits/createPathToImg";
@@ -5,26 +7,27 @@ import { EmbroideryItem } from "../../types/types";
 import Image from "next/image";
 
 interface ItemCardProps {
+  key: number;
   item: EmbroideryItem;
   lang: string;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({ item, lang }) => {
-  const { image, title, price } = item;
+const ItemCard: React.FC<ItemCardProps> = ({ key, item, lang }) => {
+  const { id, image, title, price } = item;
   const currents = lang === "en" ? "$" : "₽";
 
   const handleBuyClick = (id: number) => {
     // Логика для кнопки "Купить"
-    alert(`Купить вышивку с ID ${id}`);
+    console.log(`Купить вышивку с ID ${id}`);
   };
 
   const handleViewClick = (id: number) => {
     // Логика для кнопки "Посмотреть"
-    alert(`Посмотреть вышивку с ID ${id}`);
+    console.log(`Посмотреть вышивку с ID ${id}`);
   };
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} key={key} onClick={() => handleViewClick(id)}>
       <Image
         className={styles.cardImage}
         src={createPathToImg(image)}
@@ -35,18 +38,21 @@ const ItemCard: React.FC<ItemCardProps> = ({ item, lang }) => {
       />
       <div className={styles.cardBody}>
         <h3 className={styles.cardTitle}>{title}</h3>
-        <div className={styles.buttonGroup}>
           <p className={styles.cardText}>
-            {currents}
-            {price}
+              {currents}
+              {price}
           </p>
+
           <button
             className={styles.primaryButton}
-            // onClick={() => handleBuyClick(id)}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleBuyClick(id);
+            }}
           >
             +
           </button>
-        </div>
+
       </div>
     </div>
   );

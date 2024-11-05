@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "../../styles/components/ui/Accordion.module.scss";
-import cn from 'classnames';
+import cn from "classnames";
 
 interface AccordionItemProps {
   title: string;

@@ -7,15 +7,15 @@ const Catalog: React.FC<EmbroideriesProps> = ({ embroideries, dict, lang }) => {
   const { data } = embroideries;
 
   return (
-      <div className={styles.container}>
-        {data.map((item) => {
-          const image = item.images.length > 0 ? item.images[0].image_path : "";
+    <div className={styles.container}>
+      {data.map((item) => {
+        const image = item.images.length > 0 ? item.images[0].image_path : "";
 
-          return (
-                <CatalogCard item={{ ...item, image }} lang={lang} />
-          );
-        })}
-      </div>
+        return (
+          <CatalogCard key={item.id} item={{ ...item, image }} lang={lang} />
+        );
+      })}
+    </div>
   );
 };
 
